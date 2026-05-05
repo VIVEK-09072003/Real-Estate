@@ -1,25 +1,11 @@
-import { defineConfig } from 'vite';
-import react, { reactCompilerPreset } from '@vitejs/plugin-react';
-import babel from '@rolldown/plugin-babel';
-import tailwindcss from '@tailwindcss/vite';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite' // Yeh line aur neeche wala function zaroori hai
 
-// https://vite.dev/config/
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    tailwindcss(),
     react(),
-    babel({
-      presets: [reactCompilerPreset()],
-    }),
+    tailwindcss(),
   ],
-
-  server: {
-    proxy: {
-      '/api': {
-        target: 'http://localhost:3000',
-        changeOrigin: true, // ✅ Important
-        secure: false,
-      },
-    },
-  },
-});
+})
