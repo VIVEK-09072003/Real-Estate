@@ -1,25 +1,29 @@
-{
-  "name": "real-state",
+{  "name": "real-state",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
+  "description": "Full-stack real estate backend",
+  "main": "api/server.js",
   "scripts": {
-    "dev": "nodemon api/index.js",
-    "start": "node api/index.js"
+    "dev": "nodemon api/server.js",
+    "start": "node api/server.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["real-estate", "nodejs", "mongodb", "express"],
+  "author": "Vivek Sharma",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^3.0.3",
     "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
+    "express-mongo-sanitize": "^2.2.0",
     "firebase-admin": "^13.8.0",
+    "helmet": "^8.1.0",
     "jsonwebtoken": "^9.0.3",
     "mongodb": "^7.1.1",
     "mongoose": "^9.6.1",
-    "nodemon": "^3.1.14"
+    "multer": "^2.0.2",
+    "nodemailer": "^7.0.5",
+    "nodemon": "^3.1.14",
+    "xss-clean": "^0.1.4"
   }
 }
