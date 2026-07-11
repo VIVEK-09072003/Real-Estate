@@ -29,7 +29,7 @@ const Profile = () => {
   // 🔥 PHOTO EDIT STATE
   const [editFiles, setEditFiles] = useState([]);
 
-  const API_BASE_URL = 'https://realstate-41cq.onrender.com/api';
+  const API_BASE_URL = 'https://real-estate-rm3p.onrender.com/api';
   const token = localStorage.getItem('token');
 
   useEffect(() => {

@@ -12,7 +12,7 @@ const Login = ({ setIsAuthenticated, setUser }) => {
     setLoading(true);
     try {
       // Sending request to your Node.js backend
-      const response = await axios.post('https://realstate-41cq.onrender.com/api/auth/login', formData);
+      const response = await axios.post('https://real-estate-rm3p.onrender.com/api/auth/login', formData);
       
       // ✅ UPDATED: Storing full user object for Role and Blocked status
       localStorage.setItem('token', response.data.token);

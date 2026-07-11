@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://realstate-41cq.onrender.com/api' });
+const API = axios.create({ baseURL: 'https://real-estate-rm3p.onrender.com/api' });
 
 // Request bhejne se pehle token check karega
 API.interceptors.request.use((req) => {
